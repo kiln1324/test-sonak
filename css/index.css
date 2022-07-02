@@ -1,0 +1,164 @@
+@charset 'utf-8';
+
+/* -----------------------font-family */
+@font-face {
+  font-family: "UhBeeMiMi";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeeMiMi.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Jeju Gothic";
+  src: url(../fonts/JejuGothic.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CookieRunOTF-Black";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Black00.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* -----------------------//font-family */
+
+/* ======================================================== */
+/* ======================================================== */
+/* ======================reset.css========================= */
+/* ======================================================== */
+/* ======================================================== */
+:root {
+  font-size: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+}
+button {
+  border: none;
+  outline: none;
+}
+
+table {
+  border-collapse: collapse;
+}
+/* ======================================================== */
+/* ======================================================== */
+/* ======================common.css========================= */
+/* ======================================================== */
+/* ======================================================== */
+body {
+  width: 100%;
+  font-family: "Jeju Gothic", sans-serif;
+  overflow-y: auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  display: inline-block;
+  padding: 1.6rem 3.2rem;
+  margin: 1rem;
+  border-radius: 0.4rem;
+  background-color: #5f2eff;
+  box-shadow: 0px 5px 0px 0px #26014d;
+
+  text-align: center;
+  color: #fff;
+  font-size: 1.6rem;
+
+  font-family: "Jeju Gothic", sans-serif;
+}
+
+button:hover {
+  background: #8a4495;
+}
+
+@media (max-width: 800px) {
+  button:hover {
+    background: #5f2eff;
+  }
+}
+
+.container {
+  width: 100%;
+  background-color: #e0bfe6;
+}
+.test__wrap {
+  padding: 0 1.6rem;
+  max-width: 60rem;
+  margin: 0 auto;
+  height: 100vh;
+}
+.email {
+  text-align: center;
+  line-height: 4rem;
+  padding: 1rem 0;
+}
+
+.email a {
+  font-size: 2rem;
+  color: #b965ca;
+}
+
+.email:hover a {
+  color: #5f2eff;
+}
+
+.image-wrap {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.text_area {
+  background-color: #e0bfe6;
+  padding: 2rem;
+  max-width: 64rem;
+  font-size: 1.6rem;
+}
+
+#main_text {
+  text-align: center;
+  line-height: 1.6;
+
+  word-break: keep-all;
+}
+
+.question_area {
+  margin-top: 1rem;
+}
+.question_area table,
+.question_area tr {
+  display: flex;
+  justify-content: center;
+}

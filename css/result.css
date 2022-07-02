@@ -1,0 +1,659 @@
+@charset 'utf-8';
+
+body {
+  color: #333;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  width: 100%;
+  min-width: 30rem;
+}
+
+.result__wrap {
+  min-width: 30rem;
+  max-width: 60rem;
+  margin: 0 auto;
+  padding-bottom: 10rem;
+  text-align: center;
+
+  position: relative;
+}
+.magic .result__wrap {
+  padding-top: 4rem;
+}
+
+.result__wrap svg {
+  width: 4rem;
+  height: 4rem;
+
+  position: absolute;
+  top: 3.6rem;
+  left: calc(50% - 1.6rem);
+  z-index: 999;
+}
+
+.result {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  padding: 4rem 0;
+
+  align-items: center;
+  background: url(../img/result_bg.svg) no-repeat center/ auto 94%;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.magic .result {
+  padding: 3rem 0 10rem;
+}
+.page-title {
+  min-width: 40rem;
+  width: 60%;
+  padding: 6rem 0 2rem;
+
+  font-family: "UhBeeMiMi";
+  font-size: 2.4rem;
+  color: #213648;
+  font-weight: 400;
+
+  position: relative;
+}
+
+.page-title::before,
+.page-title::after {
+  content: "";
+  display: block;
+  height: 3rem;
+  width: 9rem;
+  background: url(../img/title-deco.svg) no-repeat center;
+  position: absolute;
+  top: 5.8rem;
+  opacity: 0.4;
+}
+.page-title::before {
+  left: 0;
+}
+.page-title::after {
+  right: 0;
+}
+
+.magic .page-title {
+  padding: 2rem 0 6rem;
+}
+
+.magic .page-title::before,
+.magic .page-title::after {
+  top: 1.8rem;
+}
+
+.result-img {
+  width: 360px;
+}
+.result-img img {
+  width: 100%;
+}
+
+.area-name__wrap {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 1rem 0 2rem;
+}
+.area-name__wrap .area-name {
+  font-family: "CookieRunOTF-Black";
+  font-size: 4rem;
+  font-weight: bold;
+}
+.area-name__wrap .area-sub {
+  font-family: "UhBeeMiMi";
+  font-size: 2.4rem;
+  line-height: 1.2;
+}
+
+.result-text {
+  font-family: "UhBeeMiMi";
+  font-size: 2.4rem;
+  word-break: keep-all;
+  line-height: 1.2;
+  margin: 2rem 0 4rem;
+}
+
+.result-text .divide-Paragraph ~ .divide-Paragraph {
+  margin-top: 1.6rem;
+}
+
+.after-test-ment {
+  font-size: 1.6rem;
+  font-weight: 400;
+  padding: 2rem 0;
+}
+
+/* -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- */
+/* ------------------------------pin-color----------------------------- */
+/* -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- */
+
+.chowon .pin-inner {
+  fill: #c19173;
+}
+.chowon .pin-line {
+  fill: #213648;
+}
+.chowon .pin-highlight {
+  fill: #fff;
+}
+
+.highteen .pin-inner {
+  fill: #f637f5;
+}
+.highteen .pin-line {
+  fill: #213648;
+}
+.highteen .pin-highlight {
+  fill: #fff;
+}
+
+.ice .pin-inner {
+  fill: #738592;
+}
+.ice .pin-line {
+  fill: #213648;
+}
+.ice .pin-highlight {
+  fill: #fff;
+}
+
+.jungle .pin-inner {
+  fill: #3a4ca8;
+}
+.jungle .pin-line {
+  fill: #213648;
+}
+.jungle .pin-highlight {
+  fill: #fff;
+}
+
+.ocean .pin-inner {
+  fill: #3a4ca8;
+}
+.ocean .pin-line {
+  fill: #213648;
+}
+.ocean .pin-highlight {
+  fill: #fff;
+}
+
+.sf .pin-inner {
+  fill: #a6a6a6;
+}
+.sf .pin-line {
+  fill: #252525;
+}
+.sf .pin-highlight {
+  fill: #fff;
+}
+
+.steampunk .pin-inner {
+  fill: #c17573;
+}
+.steampunk .pin-line {
+  fill: #213648;
+}
+.steampunk .pin-highlight {
+  fill: #fff;
+}
+
+.wind .pin-inner {
+  fill: #9e9e9e;
+}
+.wind .pin-line {
+  fill: #213648;
+}
+.wind .pin-highlight {
+  fill: #fff;
+}
+
+/* -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- */
+/* ---------------------------background-color------------------------- */
+/* -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- */
+
+.chowon {
+  background-color: #9dc177;
+}
+.highteen {
+  background-color: #fdd7ff;
+}
+.ice {
+  background-color: #90a6ce;
+}
+.jungle {
+  background-color: #f2d981;
+}
+.korea {
+  background-color: #f2d981;
+}
+.magic {
+  background-color: #5b3e2c;
+}
+.ocean {
+  background-color: #58ccff;
+}
+.sf {
+  background-color: #505050;
+}
+.steampunk {
+  background-color: #ffc1c1;
+}
+.wind {
+  background-color: #b8e6e1;
+}
+
+/* ---------------------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+/* ---------------------------deco------------------------- */
+/* ---------------------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+
+.chowon .result {
+  background: url(../img/result_bg.svg) no-repeat center/ auto 94%,
+    url(../img/chowon_bg.png) no-repeat bottom/contain;
+  background-color: #ddecca;
+}
+
+.chowon .result::after {
+  content: "";
+  display: block;
+  width: 20rem;
+  height: 20rem;
+  background: url(../img/chowon_deco.png) no-repeat center/cover;
+
+  position: absolute;
+}
+.chowon .result::after {
+  top: -2rem;
+  left: 0.2rem;
+}
+
+.ice .result {
+  background: url(../img/result_bg.svg) no-repeat center/ auto 94%,
+    url(../img/ice_bg.png) no-repeat center top/ auto 100%;
+}
+
+.korea .result {
+  background: url(../img/result_bg.svg) no-repeat center/ auto 94%,
+    url(../img/korea_bg-01.png) no-repeat top/ 100%,
+    url(../img/korea_bg-02.png) no-repeat bottom/ 100%;
+  background-color: #a60000;
+}
+
+.korea .result::after {
+  content: "";
+  display: block;
+  width: 20rem;
+  height: 30rem;
+  background: url(../img/korea_deco.png) no-repeat left top/cover;
+  position: absolute;
+  top: 0;
+  right: -2rem;
+}
+
+@media all and (max-width: 550px) {
+  .korea .result::after {
+    display: none;
+  }
+}
+
+.jungle .result {
+  background-color: #568a35;
+}
+.jungle .result::before,
+.jungle .result::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 20rem;
+
+  position: absolute;
+  left: 0;
+}
+.jungle .result::before {
+  background: url(../img/jungle_bg-01.png) no-repeat center top/100%;
+  top: 0;
+}
+.jungle .result::after {
+  background: url(../img/jungle_bg-02.png) no-repeat center top/100%;
+  bottom: -6rem;
+}
+
+@media all and (max-width: 600px) {
+  .jungle .result::before,
+  .jungle .result::after {
+    display: none;
+  }
+}
+.magic .result {
+  background: url(../img/magic_bg.png) no-repeat center top/auto 100%;
+}
+.ocean .result {
+  background: url(../img/result_bg.svg) no-repeat center/ auto 94%,
+    url(../img/ocean_bg.png) no-repeat bottom/ contain;
+}
+.sf .result {
+  background: url(../img/result_bg.svg) no-repeat center/ auto 94%,
+    url(../img/sf_bg.png) no-repeat top;
+}
+.steampunk .result {
+  background-color: #ffcbcb;
+}
+/* -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- */
+/* -----------------------------area-name-color--------------------------- */
+/* -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- */
+
+.chowon .area-name {
+  color: #5b3e2c;
+}
+
+/* ---------------로벨리아 지역 이름 bg */
+.highteen .area-name__wrap {
+  width: 100%;
+  background: url(../img/highteen-title_bg.svg) no-repeat center / contain;
+}
+.highteen .area-name {
+  color: #fff;
+}
+
+.ice .area-name {
+  color: #213648;
+}
+.jungle .area-name {
+  color: #fd9f28;
+}
+.korea .area-name {
+  color: #3a4ca8;
+}
+.magic .area-name {
+  color: #5b3e2c;
+}
+.ocean .area-name {
+  background: linear-gradient(45deg, #18a8f1, #18a8f1, #f3b436, #f3b436);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.sf .area-name {
+  color: #505050;
+}
+.steampunk .area-name {
+  color: #a60000;
+}
+.wind .area-name {
+  color: #b8e6e1;
+  background: linear-gradient(45deg, #a6bef0, #a6bef0, #ddecca, #ddecca);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- */
+/* -----------------------------area-sub-color--------------------------- */
+/* -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- */
+
+.chowon .area-sub {
+  color: #129663;
+}
+.highteen .area-sub {
+  color: #f637f5;
+}
+.ice .area-sub {
+  color: #3a4ca8;
+}
+.jungle .area-sub {
+  color: #129663;
+}
+.korea .area-sub {
+  color: #129663;
+}
+.magic .area-sub {
+  color: #333;
+}
+.ocean .area-sub {
+  color: #5b3e2c;
+}
+.sf .area-sub {
+  color: #505050;
+}
+.steampunk .area-sub {
+  color: #fc5230;
+}
+.wind .area-sub {
+  color: #2fa599;
+}
+
+/* -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- */
+/* -----------------------------result-text-color--------------------------- */
+/* -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- */
+
+.chowon .result-text {
+  color: #5b3e2c;
+}
+.highteen .result-text {
+  color: #5b3e2c;
+}
+.ice .result-text {
+  color: #5b3e2c;
+}
+.jungle.result-text {
+  color: #5b3e2c;
+}
+.korea .result-text {
+  color: #5b3e2c;
+}
+.magic .result-text {
+  color: #51462c;
+}
+.ocean .result-text {
+  color: #5b3e2c;
+}
+.sf .result-text {
+  color: #493d24;
+}
+.steampunk .result-text {
+  color: #5b3e2c;
+}
+.wind .result-text {
+  color: #5b3e2c;
+}
+/* ---------------------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+/* ---------------------------button-color------------------------- */
+/* ---------------------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+.link-btn {
+  display: inline-block;
+  padding: 1.6rem 3.2rem;
+  margin: 1rem;
+  border-radius: 0.4rem;
+
+  text-align: center;
+  font-size: 1.6rem;
+  font-family: "Jeju Gothic", sans-serif;
+
+  color: #fff;
+}
+.container.chowon .link-btn {
+  background-color: #a5532a;
+  box-shadow: 0px 0.4rem 0px 0px #2a1d00;
+}
+
+.container.highteen .link-btn {
+  background-color: #800080;
+  box-shadow: 0px 0.4rem 0px 0px #47014d;
+}
+.container.ice .link-btn {
+  background-color: #2a53a5;
+  box-shadow: 0px 0.4rem 0px 0px #18014d;
+}
+.container.jungle .link-btn,
+.container.korea .link-btn {
+  background-color: #f3b436;
+  box-shadow: 0px 0.4rem 0px 0px #89641a;
+
+  color: #333;
+}
+.container.magic .link-btn {
+  background-color: #a56c2a;
+  box-shadow: 0px 0.4rem 0px 0px #341000;
+
+  color: #271010;
+}
+.container.ocean .link-btn {
+  background-color: #fff;
+  box-shadow: 0px 0.4rem 0px 0px #1fa2d2;
+
+  color: #18a8f1;
+}
+.container.sf .link-btn {
+  background-color: #252525;
+  box-shadow: 0px 0.4rem 0px 0px #000;
+}
+.container.steampunk .link-btn {
+  background-color: #a52a2a;
+  box-shadow: 0px 0.4rem 0px 0px #4d0101;
+}
+.container.wind .link-btn {
+  background-color: #07b09c;
+  box-shadow: 0px 0.4rem 0px 0px #18014d;
+}
+/* ---------------------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+/* ---------------------------button:hover------------------------- */
+/* ---------------------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+.container.chowon .link-btn:hover:hover {
+  background-color: #2a1d00;
+  box-shadow: 0px 0.4rem 0px 0px #a5532a;
+}
+
+.container.highteen .link-btn:hover {
+  background-color: #47014d;
+  box-shadow: 0px 0.4rem 0px 0px #800080;
+}
+.container.ice .link-btn:hover {
+  background-color: #18014d;
+  box-shadow: 0px 0.4rem 0px 0px #2a53a5;
+}
+.container.jungle .link-btn:hover,
+.container.korea .link-btn:hover {
+  background-color: #89641a;
+  box-shadow: 0px 0.4rem 0px 0px #f3b436;
+}
+.container.magic .link-btn:hover {
+  background-color: #341000;
+  box-shadow: 0px 0.4rem 0px 0px #a56c2a;
+}
+.container.ocean .link-btn:hover {
+  background-color: #1fa2d2;
+  box-shadow: 0px 0.4rem 0px 0px #fff;
+}
+.container.sf .link-btn:hover {
+  background-color: #000;
+  box-shadow: 0px 0.4rem 0px 0px #252525;
+}
+.container.steampunk .link-btn:hover {
+  background-color: #4d0101;
+  box-shadow: 0px 0.4rem 0px 0px #a52a2a;
+}
+.container.wind .link-btn:hover {
+  background-color: #18014d;
+  box-shadow: 0px 0.4rem 0px 0px #07b09c;
+}
+
+.sf .after-test-ment,
+.magic .after-test-ment {
+  color: #fff;
+}
+
+.chowon .after-test-ment {
+  color: #5b3e2c;
+}
+
+.highteen .after-test-ment {
+  color: #6d009b;
+}
+.korea .after-test-ment {
+  color: #3a4ca8;
+}
+
+/* ---------------------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+/* ---------------------------text-selection------------------------- */
+/* ---------------------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+
+.chowon *::selection {
+  background-color: #a5532a;
+  color: #fff;
+}
+.highteen *::selection {
+  background-color: #800080;
+  color: #fff;
+}
+.ice *::selection {
+  background-color: #2a53a5;
+  color: #fff;
+}
+.jungle *::selection {
+  background-color: #f3b436;
+  color: #fff;
+}
+.korea *::selection {
+  background-color: #f3b436;
+  color: #fff;
+}
+.magic *::selection {
+  background-color: #a56c2a;
+  color: #fff;
+}
+.ocean *:not(.ocean .area-name)::selection {
+  background-color: #1fa2d2;
+  color: #fff;
+}
+.sf *::selection {
+  background-color: #252525;
+  color: #fff;
+}
+.steampunk *::selection {
+  background-color: #a52a2a;
+  color: #fff;
+}
+.wind *:not(.wind .area-name)::selection {
+  background-color: #07b09c;
+  color: #fff;
+}
+
+.ocean .area-name::selection {
+  color: #fff;
+  background-color: #1fa2d2;
+  -webkit-background-clip: none;
+  -webkit-text-fill-color: initial;
+}
+.wind .area-name::selection {
+  color: #fff;
+  background-color: #07b09c;
+  -webkit-background-clip: none;
+  -webkit-text-fill-color: initial;
+}
