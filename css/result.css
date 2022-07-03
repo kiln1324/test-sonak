@@ -11,17 +11,18 @@ img {
 
 .container {
   width: 100%;
-  min-width: 30rem;
+  position: relative;
 }
 
 .result__wrap {
-  min-width: 30rem;
-  max-width: 60rem;
+  width: 100%;
+  max-width: 64rem;
   margin: 0 auto;
   padding-bottom: 10rem;
   text-align: center;
 
   position: relative;
+  /* outline: 1px solid red; */
 }
 .magic .result__wrap {
   padding-top: 4rem;
@@ -42,20 +43,22 @@ img {
   display: flex;
   flex-direction: column;
   margin-bottom: 2rem;
-  padding: 4rem 0;
+  padding: 4rem 5% 8rem;
 
   align-items: center;
-  background: url(../img/result_bg.svg) no-repeat center/ auto 94%;
-
+  background: url(../img/result_bg.svg) no-repeat center / auto 94%;
+  background-clip: content-box;
   position: relative;
   overflow: hidden;
+
+  /* outline: 1px solid lime; */
 }
 
 .magic .result {
-  padding: 3rem 0 10rem;
+  padding: 3rem 10% 10rem;
 }
 .page-title {
-  min-width: 40rem;
+  min-width: 30rem;
   width: 60%;
   padding: 6rem 0 2rem;
 
@@ -72,7 +75,7 @@ img {
   content: "";
   display: block;
   height: 3rem;
-  width: 9rem;
+  width: 20%;
   background: url(../img/title-deco.svg) no-repeat center;
   position: absolute;
   top: 5.8rem;
@@ -95,12 +98,12 @@ img {
 }
 
 .result-img {
-  width: 360px;
+  max-width: 360px;
+  margin: 0 2rem;
 }
 .result-img img {
   width: 100%;
 }
-
 .area-name__wrap {
   width: 100%;
   margin-top: 1rem;
@@ -110,6 +113,7 @@ img {
   font-family: "CookieRunOTF-Black";
   font-size: 4rem;
   font-weight: bold;
+  word-break: keep-all;
 }
 .area-name__wrap .area-sub {
   font-family: "UhBeeMiMi";
@@ -118,21 +122,43 @@ img {
 }
 
 .result-text {
+  width: calc(100% - 4rem);
   font-family: "UhBeeMiMi";
   font-size: 2.4rem;
   word-break: keep-all;
   line-height: 1.2;
-  margin: 2rem 0 4rem;
+  margin: 2rem 2rem 4rem;
 }
-
+@media all and (max-width: 520px) {
+  .result-text br {
+    display: none;
+  }
+}
 .result-text .divide-Paragraph ~ .divide-Paragraph {
   margin-top: 1.6rem;
 }
 
 .after-test-ment {
+  width: calc(100% - 4rem);
   font-size: 1.6rem;
   font-weight: 400;
-  padding: 2rem 0;
+  margin: 0 2rem 2rem;
+  word-break: keep-all;
+  line-height: 1.6;
+}
+
+.link-btn {
+  width: calc(100% - 4rem);
+  display: inline-block;
+  padding: 1.6rem 3.2rem;
+  margin: 1rem 2rem;
+  border-radius: 0.4rem;
+
+  text-align: center;
+  font-size: 1.6rem;
+  font-family: "Jeju Gothic", sans-serif;
+
+  color: #fff;
 }
 
 /* -------------------------------------------------------------------- */
@@ -265,32 +291,40 @@ img {
 /* ---------------------------------------------------------------- */
 
 .chowon .result {
-  background: url(../img/result_bg.svg) no-repeat center/ auto 94%,
-    url(../img/chowon_bg.png) no-repeat bottom/contain;
+  background: url(../img/result_bg.svg) no-repeat center 4rem / auto 94%,
+    url(../img/chowon_bg.png) no-repeat bottom/64rem;
   background-color: #ddecca;
 }
 
 .chowon .result::after {
   content: "";
   display: block;
-  width: 20rem;
+  width: 30%;
   height: 20rem;
-  background: url(../img/chowon_deco.png) no-repeat center/cover;
+  background: url(../img/chowon_deco.png) no-repeat center/contain;
 
   position: absolute;
 }
 .chowon .result::after {
   top: -2rem;
   left: 0.2rem;
+
+  transition: all 0.2s;
 }
 
+@media all and (max-width: 520px) {
+  .chowon .result::after {
+    top: -4rem;
+    left: -0.4rem;
+  }
+}
 .ice .result {
   background: url(../img/result_bg.svg) no-repeat center/ auto 94%,
     url(../img/ice_bg.png) no-repeat center top/ auto 100%;
 }
 
 .korea .result {
-  background: url(../img/result_bg.svg) no-repeat center/ auto 94%,
+  background: url(../img/result_bg.svg) no-repeat center / auto 94%,
     url(../img/korea_bg-01.png) no-repeat top/ 100%,
     url(../img/korea_bg-02.png) no-repeat bottom/ 100%;
   background-color: #a60000;
@@ -299,17 +333,18 @@ img {
 .korea .result::after {
   content: "";
   display: block;
-  width: 20rem;
-  height: 30rem;
-  background: url(../img/korea_deco.png) no-repeat left top/cover;
+  width: 16rem;
+  height: 50rem;
+  background: url(../img/korea_deco.png) no-repeat left top/contain;
   position: absolute;
   top: 0;
-  right: -2rem;
-}
+  left: 80%;
 
-@media all and (max-width: 550px) {
+  transition: all 0.4s;
+}
+@media all and (max-width: 640px) {
   .korea .result::after {
-    display: none;
+    left: 70%;
   }
 }
 
@@ -342,7 +377,7 @@ img {
   }
 }
 .magic .result {
-  background: url(../img/magic_bg.png) no-repeat center top/auto 100%;
+  background: url(../img/magic_bg.png) no-repeat center top/98% 100%;
 }
 .ocean .result {
   background: url(../img/result_bg.svg) no-repeat center/ auto 94%,
@@ -482,18 +517,7 @@ img {
 /* ---------------------------button-color------------------------- */
 /* ---------------------------------------------------------------- */
 /* ---------------------------------------------------------------- */
-.link-btn {
-  display: inline-block;
-  padding: 1.6rem 3.2rem;
-  margin: 1rem;
-  border-radius: 0.4rem;
 
-  text-align: center;
-  font-size: 1.6rem;
-  font-family: "Jeju Gothic", sans-serif;
-
-  color: #fff;
-}
 .container.chowon .link-btn {
   background-color: #a5532a;
   box-shadow: 0px 0.4rem 0px 0px #2a1d00;
